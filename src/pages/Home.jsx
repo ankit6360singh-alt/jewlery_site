@@ -1,7 +1,7 @@
 import React from 'react';
 import Hero from '../components/Hero';
 import ProductCard from '../components/ProductCard';
-import CountdownTimer from '../components/CountdownTimer';
+
 import Newsletter from '../components/Newsletter';
 
 const Home = () => {
@@ -12,9 +12,7 @@ const Home = () => {
         { id: 4, name: 'Diamond Tennis Bracelet', category: 'Bracelets', price: 499 },
     ];
 
-    // Set countdown target to 3 days from now
-    const targetDate = new Date();
-    targetDate.setDate(targetDate.getDate() + 3);
+
 
     return (
         <div className="bg-soft-white">
@@ -33,26 +31,21 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* Big Offer Section */}
+            {/* Community Section */}
             <section className="bg-rose-50 py-16">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between">
-                    <div className="md:w-1/2 mb-8 md:mb-0 text-center md:text-left">
-                        <h2 className="text-4xl font-serif font-bold text-secondary mb-4">
-                            Big Offer Sale!
-                        </h2>
-                        <p className="text-xl text-gray-600 mb-6">
-                            Get up to 50% off on our exclusive wedding collection. Limited time only.
-                        </p>
-                        <button className="px-8 py-3 bg-accent text-white rounded-full hover:bg-accent-hover transition-colors shadow-lg">
-                            Shop the Sale
-                        </button>
-                    </div>
-                    <div className="md:w-1/2 flex justify-center">
-                        <div className="bg-white p-8 rounded-2xl shadow-xl border border-rose-100">
-                            <h3 className="text-center text-secondary font-serif mb-4">Offer Ends In:</h3>
-                            <CountdownTimer targetDate={targetDate} />
-                        </div>
-                    </div>
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 className="text-4xl font-serif font-bold text-secondary mb-6">
+                        Join Our Community
+                    </h2>
+                    <p className="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                        Become a part of the OSHINA family. We celebrate elegance, authenticity, and the stories that make you unique.
+                    </p>
+                    <a
+                        href="/community"
+                        className="inline-block px-8 py-3 bg-accent text-white rounded-full hover:bg-accent-hover transition-colors shadow-lg"
+                    >
+                        Know more about our community
+                    </a>
                 </div>
             </section>
 

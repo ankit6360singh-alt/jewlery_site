@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
+import Community from './pages/Community';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/community" element={<Community />} />
           {/* Add other routes here as we build them */}
           <Route path="/shop" element={<div className="pt-20 text-center">Shop Page Coming Soon</div>} />
           <Route path="/about" element={<div className="pt-20 text-center">About Page Coming Soon</div>} />
@@ -19,7 +21,7 @@ function App() {
         {/* Simple Footer Placeholder */}
         <footer className="bg-secondary text-white py-8 mt-auto">
           <div className="max-w-7xl mx-auto px-4 text-center">
-            <p>&copy; 2024 LuxeGems. All rights reserved.</p>
+            <p>&copy; 2025 OSHINA. All rights reserved.</p>
           </div>
         </footer>
       </div>
